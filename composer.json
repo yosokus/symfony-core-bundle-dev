@@ -1,0 +1,26 @@
+{
+    "name": "rps/core-bundle",
+    "description": "Symfony RPSCoreBundle",
+    "keywords": ["package", "symfony", "RPS"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yos Okus",
+            "email": "yos.okus@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~2.3"
+    },
+
+    "suggest": {
+        "white-october/pagerfanta-bundle": "Integrates white-october/pagerfanta for pagination."
+    },
+
+    "autoload": {
+        "psr-0": { "RPS\\CoreBundle": "" }
+    },
+
+    "target-dir": "RPS/CoreBundle"
+}
