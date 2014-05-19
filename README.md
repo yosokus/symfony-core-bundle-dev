@@ -1,4 +1,4 @@
 RPSCoreBundle
 =================
 
-Common classes used by RPS packages.
+A collection of classes used by RPS packages.
