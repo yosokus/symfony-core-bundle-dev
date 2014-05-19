@@ -15,7 +15,7 @@ namespace RPS\CoreBundle\Pager;
  * Default Pager.
  */
 
-class DefaultPager implements PagerInterface
+abstract class DefaultPager implements PagerInterface
 {
     protected $pagerExtension = null;
 
@@ -24,20 +24,6 @@ class DefaultPager implements PagerInterface
         $this->pagerExtension = $pagerExtension;
     }
     
-    /**
-     * Get Paginated list
-     *
-     * @var QueryBuilder    $queryBuilder
-     * @var integer         $offset         query offset
-     * @var integer         $limit          query limit
-     *
-     * @return string
-     */
-    public function getList($queryBuilder, $offset, $limit)
-    {
-        return $queryBuilder->getQuery()->getResult();
-    }
-
     /**
      * {@inheritdoc}
      */
